@@ -1,0 +1,136 @@
+{
+	"info": {
+		"_postman_id": "71c4c6fd-8550-43a4-af1e-a40c95287d75",
+		"name": "PhoneBook",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20481543"
+	},
+	"item": [
+		{
+			"name": "getAllPhoneBook",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/phoneBook/getAllPhoneBook",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"phoneBook",
+						"getAllPhoneBook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getPhoneBookById",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/phoneBook/getPhoneBookById/6",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"phoneBook",
+						"getPhoneBookById",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deletePhoneBook",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/phoneBook/deletePhoneBook/7",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"phoneBook",
+						"deletePhoneBook",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updatePhoneBook",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Gerrard\",\r\n    \"phoneNo\" : \"082738293912\",\r\n    \"address\" : \"Jakarta\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/phoneBook/updatePhoneBook/6",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"phoneBook",
+						"updatePhoneBook",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "insertPhoneBook",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Steve\",\r\n    \"phoneNo\" : \"082718294302\",\r\n    \"address\" : \"Padang\",\r\n    \"email\" : \"steve@gmail.com\",\r\n    \"dateOfBirth\" : \"1998/01/02\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/phoneBook/insertPhoneBook",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"phoneBook",
+						"insertPhoneBook"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
